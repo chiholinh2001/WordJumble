@@ -3,10 +3,12 @@ from random import choice
 from random import shuffle
 from tkinter import messagebox
 
+linkIcon = "D:/Project/WordJumble/icon.ico"
+
 root = Tk()
 root.title('Word Jumble')
 root.geometry("600x400")
-root.iconbitmap("D:/Project/WordJumble/icon.ico")
+root.iconbitmap(linkIcon)
 
 myLabel = Label(root, text="", font=("Helvetica", 50))
 myLabel.pack(pady=20)
@@ -86,10 +88,7 @@ eAnswer.pack(pady=20)
 myFrame = Frame(root)
 myFrame.pack(pady=20)
 
-# myButton = Button(myFrame, text="Pick Another Word", command=shuffler)
-# myButton.grid(row=0, column=0, padx=10)
-
-ansButton = Button(myFrame, text="Answer!", command=answer)
+ansButton = Button(myFrame, text="Answer", command=answer)
 ansButton.grid(row=0, column=1, padx=10)
 
 ansLabel = Label(root, text="", font=("Helvetica", 20))
