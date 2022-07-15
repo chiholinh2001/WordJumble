@@ -3,7 +3,7 @@ from random import choice
 from random import shuffle
 from tkinter import messagebox
 
-linkIcon = "D:/Project/WordJumble/icon.ico"
+linkIcon = "D:\Projects\WordJumble\icon.ico"
 
 root = Tk()
 root.title('Word Jumble')
